@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página para criar e publicar posts">
+  <title>PostMaster - Crie seu Post</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>PostMaster</h1>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <article class="form-section">
+        <h2>Criar Novo Post</h2>
+        <form id="form-post">
+          <div class="form-group">
+            <label for="titulo-post">Título do Post</label>
+            <input type="text" id="titulo-post" name="titulo" placeholder="Digite o título do seu post..." required
+              aria-label="Campo para título do post">
+          </div>
+
+          <div class="form-group">
+            <label for="conteudo-post">Conteúdo</label>
+            <textarea id="conteudo-post" name="conteudo" rows="6" placeholder="Escreva o conteúdo do seu post..."
+              required aria-label="Campo para conteúdo do post"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" aria-label="Publicar post">
+            Publicar Post
+          </button>
+        </form>
+      </article>
+
+      <aside class="preview-section">
+        <h2>Preview do Post</h2>
+        <article class="post-card">
+          <h3 id="renderizador-titulo" class="post-titulo">
+            Título...
+          </h3>
+          <p id="renderizador-conteudo" class="post-conteudo">
+            Conteúdo...
+          </p>
+          <div id="post-info" class="post-info"></div>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PostMaster - Projeto de Certificação 2 da Trilha 2 do DEVstart</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
